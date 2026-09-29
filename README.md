@@ -33,8 +33,8 @@ O script `scripts/gerar_dados.py` cria 500 clientes, 10 vendedores, 15 produtos,
 ## Como rodar
 
 ```powershell
-git clone [URL-DO-SEU-REPOSITORIO]
-cd projeto-analise-vendas
+git clone https://github.com/Lua-Alves/projeto_analise_vendas.git
+cd projeto_analise_vendas
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
