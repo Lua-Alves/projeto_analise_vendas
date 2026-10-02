@@ -51,3 +51,13 @@ limit 10;
 -- Pergunta: quanto cada venda rende, em média?
 select round(sum(i.preco_venda * i.quantidade) / count(distinct i.id_venda), 2) as ticket_medio
 from item_venda i;
+
+-- Análise 7: desconto médio por produto
+-- Pergunta: quanto de desconto, em média, cada produto recebeu?
+select p.nome_produto,
+       round(avg((p.preco_atual - i.preco_venda) / p.preco_atual * 100), 1) as desconto_medio_pct
+from item_venda i
+join produto p on i.id_produto = p.id_produto
+group by p.id_produto, p.nome_produto
+order by desconto_medio_pct desc;
+

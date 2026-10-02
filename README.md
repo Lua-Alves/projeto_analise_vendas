@@ -103,11 +103,12 @@ scripts/   gerador de dados
 docs/      diagrama entidade-relacionamento
 ```
 
-## O que aprendi de PostgreSQL neste projeto
+## O que aprendi neste projeto
 
 - **Um servidor, vários bancos.** Sem informar `-d nome_do_banco`, o `psql` conecta no banco padrão `postgres`, e não no do projeto.
 - **Paginador do `psql`.** O `-- Mais --` escondia as últimas linhas de um resultado. Resolvi com `\pset pager off`, que vale só para a sessão atual e precisa ser repetido ao abrir o `psql` de novo.
 - **Diferença não é tendência.** Dezembro de 2025 teve cerca de 5% mais vendas que dezembro de 2024, mas os meses normais já variam bem mais que isso de um mês para o outro, então não dá para afirmar crescimento.
+-**Desconto médio.** O desconto médio fica em torno de 7% para todos os produtos (de 6,5% a 7,7%), sem diferença relevante entre eles.
 
 ## Próximos passos
 
